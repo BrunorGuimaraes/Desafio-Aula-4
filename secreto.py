@@ -81,6 +81,9 @@ if nivel == 2:
             print(f"\nParabéns, você acertou o número secreto!\nA sua pontuação é: {pontos} ponto(s)\n")
             break
 
+        elif secreto > 100 or secreto < 0:
+            print("Só números de 1 a 100! Tente Novamente.\n")
+            tentativas += 1
 
         elif randomNumber > secreto:
             print('O número secreto é maior que esse!\n')
@@ -90,11 +93,6 @@ if nivel == 2:
         elif randomNumber < secreto:
             print('O número secreto é menor que esse!\n')
             pontos -= 20
-
-
-        elif secreto > 100:
-            print("Só números de 1 a 100! Tente Novamente.\n")
-            tentativas += 1
 
 
         tentativas -= 1
@@ -118,6 +116,9 @@ if nivel == 3:
             print(f"\nParabéns, você acertou o número secreto!\nA sua pontuação é: {pontos} ponto(s)\n")
             break
 
+        elif secreto > 100 or secreto < 0:
+            print("Só números de 1 a 100! Tente Novamente.\n")
+            tentativas += 1
 
         elif randomNumber > secreto:
             print('O número secreto é maior que esse!\n')
@@ -129,9 +130,7 @@ if nivel == 3:
             pontos -= 50
 
 
-        elif secreto > 100:
-            print("Só números de 1 a 100! Tente Novamente.\n")
-            tentativas += 1
+
 
 
         tentativas -= 1
